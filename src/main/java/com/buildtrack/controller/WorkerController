@@ -1,0 +1,13 @@
+package com.buildtrack.controller;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class WorkerController {
+
+    @GetMapping("/workers")
+    public String workers() {
+        return "Workers API Working";
+    }
+}
